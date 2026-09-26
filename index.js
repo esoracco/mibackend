@@ -23,6 +23,10 @@ app.get('/empanadas', (peticion, respuesta) => {
     respuesta.send("tus empanadas estaran listas en 10 minutos");
 });
 
+app.get('/contacto', (peticion, respuesta) => {
+    respuesta.send("<h1 style='color: red; text-align: center; margin-top: 20px;'>Contactanos</h1>");
+});
+
 // 3. Arrancamos la app
 app.listen(PORT, () => {
   console.log(`Servidor escuchando en el puerto http://localhost:${PORT}`);
